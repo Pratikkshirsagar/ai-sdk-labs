@@ -11,5 +11,5 @@ const stream = streamText({
 });
 
 for await (const chunk of stream.textStream) {
-  console.log(chunk);
+  process.stdout.write(chunk);
 }
